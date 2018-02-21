@@ -1,6 +1,6 @@
 # Thailand Address (Province, District, Sub-District, Zipcode, Latitude, Longitude)
 
-Data combination from /data/*.json to one file for mongodb
+Combined data from /data/*.json to one file for mongodb
 
 Reference:
 https://github.com/Cerberus/Thailand-Address
