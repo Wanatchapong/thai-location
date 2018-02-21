@@ -1,6 +1,10 @@
 # Thailand Address<br/>(Province, District, Sub-District, Zipcode, Latitude, Longitude)
 
-Combined data from /data/*.json to one file for mongodb
+## Let's start
+npm install
+npm start
+
+Enter url http://localhost:8080/download on web browser
 
 Reference:<br/>
 https://github.com/Cerberus/Thailand-Address<br/>

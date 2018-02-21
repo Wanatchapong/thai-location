@@ -1,0 +1,23 @@
+{
+  "name": "thailand-address",
+  "version": "1.0.0",
+  "description": "Combined data from /data/*.json to one file for mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wanatchapong/thailand-address.git"
+  },
+  "author": "Wanatchapong M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wanatchapong/thailand-address/issues"
+  },
+  "homepage": "https://github.com/Wanatchapong/thailand-address#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
