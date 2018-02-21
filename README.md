@@ -2,6 +2,6 @@
 
 Combined data from /data/*.json to one file for mongodb
 
-Reference:\
-https://github.com/Cerberus/Thailand-Address\
+Reference:<br/>
+https://github.com/Cerberus/Thailand-Address<br/>
 https://github.com/rathpanyowat/Thai-zip-code-latitude-and-longitude
