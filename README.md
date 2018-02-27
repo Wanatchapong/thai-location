@@ -2,9 +2,10 @@
 
 ## Let's start
 `npm install`<br/>
-`npm start`<br/>
+`npm run start:dev`<br/>
 
-Enter url `http://localhost:8080/download` on web browser
+## Download thai-address.json
+Enter url `http://localhost:8080/provinces/download` on web browser
 
 Reference:<br/>
 https://github.com/Cerberus/Thailand-Address<br/>
