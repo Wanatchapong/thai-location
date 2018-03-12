@@ -1,5 +1,8 @@
 const express = require('express');
 const fs = require('fs');
+const { promisify } = require('util');
+const readFile = promisify(fs.readFile);
+
 const MongoClient = require('mongodb').MongoClient;
 const mongoUrl = 'mongodb://localhost:27017';
 const dbName = 'thai-address-db';
@@ -8,10 +11,10 @@ const router = express.Router();
 router.get('/download', (req, res, next) => {
 
     try {
-        let provinces = JSON.parse(fs.readFileSync('./data/provinces.json', 'utf8')).data;
-        let districts = JSON.parse(fs.readFileSync('./data/districts.json', 'utf8')).data;
-        let subdistricts = JSON.parse(fs.readFileSync('./data/subdistricts.json', 'utf8')).data;
-        let zipcodes = JSON.parse(fs.readFileSync('./data/zipcodes.json', 'utf8')).data;
+        let provinces = JSON.parse(await readFile('./data/provinces.json', 'utf8')).data;
+        let districts = JSON.parse(await readFile('./data/districts.json', 'utf8')).data;
+        let subdistricts = JSON.parse(await readFile('./data/subdistricts.json', 'utf8')).data;
+        let zipcodes = JSON.parse(await readFile('./data/zipcodes.json', 'utf8')).data;
         let zipcodeLatLng = JSON.parse(fs.readFileSync('./data/zipcodes_lat_lng.json', 'utf8')).data;
 
         let results = [];
